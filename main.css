@@ -1,0 +1,114 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+body,
+.container {
+  background-color: #FFEFCF;
+  min-height:100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: block;
+  min-height: 600px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.search-field {
+  margin: 20px;
+  text-align: center;
+  min-width:250px;
+}
+
+input,
+button {
+  display: inline-block;
+  margin: 0;
+  border: 1px solid #276C6C;
+}
+
+#query {
+  min-width: 250px;
+  line-height: 24px;
+  border-radius: 3px 0 0 3px;
+}
+
+#search-btn {
+  height:28px;
+  margin-left: -6px;
+  border-left: none;
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #6FA2A3;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.random-search {
+  margin: 10px auto;
+  display: block;
+  color: #6FA2A3;
+  width: 200px;
+  font-weight: 600;
+}
+
+.random-search:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+  display: inline-block;
+  background: url('https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/256/dice.png') no-repeat;
+  background-size: 20px 20px;
+}
+
+a {
+  text-decoration: none;
+  outline:0;
+}
+.result {
+  padding: 15px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, .5);
+  text-align: left;
+}
+.result:hover, .result:focus, .result:active{
+  background-color: rgba(255, 255, 255, .9);
+  border: 1px solid #555;
+}
+.result h3 {
+  color: #6FA2A3;
+  font-weight: 700;
+}
+
+.result a p {
+  color: #3E6673;
+}
+
+@media screen and (max-width:400px) {
+  body {
+    padding: 10px;
+  }
+  h1{
+    font-size:1.8em;
+  }
+  .search-field {
+    width: 100%;
+    margin:10px 0;
+  }
+  #query {
+    min-width: 150px;
+    max-width: 200px;
+  }
+}
